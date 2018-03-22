@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@mipmap/music_background"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_marginTop="40dp"
+        android:id="@+id/Media_Info_Singer"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Media Player "/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/Media_Info_Path"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Media Player "/>
+
+    <include layout="@layout/media_play_bar"
+        android:layout_marginTop="330dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

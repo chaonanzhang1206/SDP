@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_music_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/Music_Button_Scan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Music Scan"
+        android:layout_margin="37dp"/>
+    <LinearLayout
+        android:id="@+id/Music_Search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="40dp">
+        <EditText
+            android:id="@+id/Music_Input_Keywords"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:id="@+id/Music_Button_Search"
+            android:layout_width="3dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="#0000"
+            android:src="@mipmap/icon_search" />
+    </LinearLayout>
+</LinearLayout>
